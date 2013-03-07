@@ -4,7 +4,15 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
+
+  config.toolbar_MBC = [
+    { name: 'clipboard', items : [ 'Print','-','Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
+    { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+    { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+    { name: 'insert', items : [ 'Table','HorizontalRule','PageBreak', '-', 'Link','Anchor', '-', 'SpecialChar'] },
+    { name: 'styles', items : [ 'Styles','Format','Font','FontSize','TextColor','BGColor' ] }
+  ];
+
+  config.toolbar = 'MBC';
+
 };
