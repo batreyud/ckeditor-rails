@@ -2,7 +2,7 @@ CKEDITOR.editorConfig = function( config )
 {
   config.resize_enabled = false;
   config.extraPlugins ='mbclibrary,mbcvideos,mbcimages,video,menubutton,scayt';
-
+  config.allowedContent = 'p img div video b';
   // config.extraPlugins ='devtools';
 
   config.toolbar_MBC = [
