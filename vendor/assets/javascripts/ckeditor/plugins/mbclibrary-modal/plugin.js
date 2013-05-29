@@ -14,7 +14,7 @@ CKEDITOR.plugins.add('mbclibrary-modal',
           $(".modal-content").append("<div class='media-selector' style='width:0px;'>Loading media...</div>");
         };
         $('.media-selector').animate({'width': '200px'}, 300, function(){
-          $('.media-selector').load("/items/video_search/?in_modal=true?library_videos=" + CKEDITOR.currentInstance.name + '');
+          $('.media-selector').load("/items/video_search/?in_modal=true&library_videos=" + CKEDITOR.currentInstance.name + '');
         });
       }
     });

@@ -14,7 +14,7 @@ CKEDITOR.plugins.add('mbcimages-modal',
           $(".modal-content").append("<div class='media-selector' style='width:0px;'>Loading media...</div>");
         };
         $('.media-selector').animate({'width': '200px'}, 300, function(){
-          $('.media-selector').load("/documents/get_images/?in_modal=true?ckinstance=" + CKEDITOR.currentInstance.name + '' );
+          $('.media-selector').load("/documents/get_images/?in_modal=true&ckinstance=" + CKEDITOR.currentInstance.name + '' );
         });
       }
     });

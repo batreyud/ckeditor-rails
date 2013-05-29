@@ -9,10 +9,13 @@ CKEDITOR.editorConfig = function( config )
     // NOTE: The jQuery adapter breaks CKEditor's default Save button functionality; the previously-saved editor contents are sent to the server and not the updated contents of the editor.
     // As of CKEditor 3.6.2 this is still broken.
     { name: 'clipboard', items : [ 'Find', '-','Cut','Copy','PasteText','PasteFromWord','-','Undo','Redo'] },
-    { name: 'insert', items : [ 'Table','HorizontalRule','PageBreak', '-', 'SpecialChar', '-', 'Link', 'Anchor' ] },
-    { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+    { name: 'pageitems', items : [ 'Table','HorizontalRule','PageBreak' ] },
+    { name: 'insert', items : ['Blockquote','SpecialChar', 'NumberedList','BulletedList' ] },
+    { name: 'links', items: ['Link', 'Anchor', 'Outdent','Indent' ] },
+    { name: 'paragraph', items : [ 'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
     { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
-    { name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
+    { name: 'styles', items : [ 'Styles','Format' ] },
+    { name: 'fonts', items: [ 'Font','FontSize' ] },
     { name: 'colors', items : [ 'TextColor','BGColor'] },
     { name: 'mbcplugins', items : [ 'MBCLibrary', 'MBCVideo',  'MBCImage'] }
   ];
