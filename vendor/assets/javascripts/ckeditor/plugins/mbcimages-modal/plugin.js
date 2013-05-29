@@ -6,15 +6,16 @@ CKEDITOR.plugins.add('mbcimages-modal',
     {
       exec : function(editor)
       {
-        if ($(".modal-content").length){
+        if ($('.media-selector').length){
           $('.media-selector').animate({'width': '1px'}, 1000, function(){
             $('.media-selector').html('Loading media...');
           });
         }else{
-          $(".modal-content").append("<div class='media-selector' style='width:0px;'>Loading media...</div>")
-        }
-        $('.media-selector').animate({'width': '200px'}, 1000);
-        $(".media-selector").load("/documents/get_images/?ckinstance=" + CKEDITOR.currentInstance.name + '' );
+          $(".modal-content").append("<div class='media-selector' style='width:0px;'>Loading media...</div>");
+        };
+        $('.media-selector').animate({'width': '200px'}, 1000, function(){
+          $('.media-selector').load("/documents/get_images/?ckinstance=" + CKEDITOR.currentInstance.name + '' );
+        });
       }
     });
 
