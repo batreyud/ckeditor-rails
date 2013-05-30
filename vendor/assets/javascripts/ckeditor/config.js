@@ -2,7 +2,7 @@ CKEDITOR.editorConfig = function( config )
 {
   config.resize_enabled = false;
   config.extraPlugins ='mbclibrary,mbcvideos,mbcimages,video,menubutton,scayt';
-  config.allowedContent = true;
+
   // config.extraPlugins ='devtools';
 
   config.toolbar_MBC = [
@@ -24,6 +24,7 @@ CKEDITOR.editorConfig = function( config )
   config.height = '400px';
   config.removePlugins = 'elementspath';
   config.scayt_autoStartup = true;
+  config.extraAllowedContent = 'iframe video object param embed img[*]';
 };
 
 CKEDITOR.on( 'dialogDefinition', function( ev ) {
