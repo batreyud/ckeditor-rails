@@ -8,7 +8,7 @@ CKEDITOR.plugins.add('mbcimages',
       title: 'Insert Image',
       modal: true,
       autoOpen: false,
-      height: 360,
+      height: 380,
       width: 600
      });
 
