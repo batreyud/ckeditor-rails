@@ -17,14 +17,15 @@ CKEDITOR.editorConfig = function( config )
     { name: 'styles', items : [ 'Styles','Format' ] },
     { name: 'fonts', items: [ 'Font','FontSize' ] },
     { name: 'colors', items : [ 'TextColor','BGColor'] },
-    { name: 'mbcplugins', items : [ 'MBCLibrary', 'MBCVideo',  'MBCImage'] }
+    { name: 'mbcplugins', items : [ 'MBCLibrary',  'MBCImage'] }
   ];
 
   config.toolbar = 'MBC';
   config.height = '400px';
   config.removePlugins = 'elementspath';
   config.scayt_autoStartup = true;
-  config.extraAllowedContent = 'iframe video object param embed img[*]';
+  config.allowedContent = true;
+  // config.extraAllowedContent = 'iframe video object param embed img[*]';
 };
 
 CKEDITOR.on( 'dialogDefinition', function( ev ) {
