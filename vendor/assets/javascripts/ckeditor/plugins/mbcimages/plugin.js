@@ -9,7 +9,8 @@ CKEDITOR.plugins.add('mbcimages',
       modal: true,
       autoOpen: false,
       height: 380,
-      width: 600
+      width: 600,
+      dialogClass: 'ckeditor-plugin'
      });
 
     editor.addCommand('insertMBCImage',

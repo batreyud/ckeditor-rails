@@ -5,11 +5,12 @@ CKEDITOR.plugins.add('mbcvideos',
 
     var $mediaBrowser;
     $mediaBrowser = $("<div><div class='loading-dialog' style='width:inherit; height:inherit'></div></div>").dialog({
-      title: 'Your Stuff Videos',
+      title: 'Your Videos',
       modal: true,
       autoOpen: false,
       height: 510,
-      width: 550
+      width: 550,
+      dialogClass: 'ckeditor-plugin'
      });
 
     editor.addCommand('insertMBCVideo',
