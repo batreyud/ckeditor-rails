@@ -17,7 +17,7 @@ CKEDITOR.editorConfig = function( config )
     { name: 'styles', items : [ 'Styles','Format' ] },
     { name: 'fonts', items: [ 'Font','FontSize' ] },
     { name: 'colors', items : [ 'TextColor','BGColor'] },
-    { name: 'mbcplugins', items : [ 'MBCLibrary',  'MBCImage'] }
+    { name: 'mbcplugins', items : [ 'MBCLibrary',  'MBCImage', 'MBCVideo'] }
   ];
 
   config.toolbar = 'MBC';

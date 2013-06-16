@@ -9,7 +9,7 @@ CKEDITOR.plugins.add('mbclibrary',
       modal: true,
       autoOpen: false,
       height: 510,
-      width: 676,
+      width: 550,
       dialogClass: 'ckeditor-plugin'
      });
 
