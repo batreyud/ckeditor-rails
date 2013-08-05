@@ -3,8 +3,6 @@ CKEDITOR.editorConfig = function( config )
   config.resize_enabled = false;
   config.extraPlugins ='mbclibrary,mbcvideos,mbcimages,video,menubutton,scayt';
 
-  // config.extraPlugins ='devtools';
-
   config.toolbar_MBC = [
     // NOTE: The jQuery adapter breaks CKEditor's default Save button functionality; the previously-saved editor contents are sent to the server and not the updated contents of the editor.
     // As of CKEditor 3.6.2 this is still broken.
